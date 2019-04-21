@@ -8,4 +8,5 @@ urlpatterns = [
     path('list/', views.GeoListView.as_view()),
     path('<int:id>/update/', views.GeoUpdateView.as_view()),
     path('<int:id>/delete/', views.GeoDeleteView.as_view()),
+    path('pairQuery/', views.PairQueryView.as_view()),
     ]
