@@ -1,17 +1,7 @@
-**Initial Postgres DB**
+##Run
 
-**CREATE DB**
+docker-compose build
 
-sudo su postgres -> psql -> CREATE DATABASE geodb; -> CREATE USER geo WITH PASSWORD 'Ge0dB'; -> 
-ALTER ROLE geo SET client_encoding TO 'utf8'; -> ALTER ROLE geo SET default_transaction_isolation TO 'read committed'; 
--> ALTER ROLE geo SET timezone TO 'UTC';
+run docker-compose up -d. Lets go to browser and type: localhost:8000
 
-
-
-**GEO installations**
-
-sudo apt-get install binutils libproj-dev gdal-bin
-
-sudo apt install postgis
-
--> psql geodb  -> CREATE EXTENSION postgis;
+For stopping the docker, run docker-compose stop. Re-running docker, use docker-compose start.
